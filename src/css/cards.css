@@ -1,0 +1,17 @@
+.card {
+	background-color: #7c6d58;
+	box-shadow: 0.1rem 0.2rem 0.1rem 0.1rem rgba(0, 0, 0, 0.206);
+}
+
+.card h1 {
+	font-size: 1.5rem;
+}
+
+.card,
+.card img {
+	border-radius: 10px;
+}
+
+.card:hover {
+	box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(255, 255, 255, 0.515);
+}

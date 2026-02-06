@@ -1,0 +1,21 @@
+main {
+	padding: 0.5rem 0;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	padding: 1rem 0;
+}
+
+.instructions {
+	font-weight: 400;
+	font-size: 20px;
+	padding: 1rem 0;
+}
+
+footer > h1 {
+	padding: 1rem 0;
+	font-size: 20px;
+}
