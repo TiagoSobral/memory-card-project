@@ -22,7 +22,7 @@ export default function Page() {
 				// shuffle function is called to use the Fisher-Yates Algorithm, and randomize the characters.
 				return setCharacters(shuffle(figures));
 			});
-	}, []);
+	}, [score]);
 
 	function handleClick(e) {
 		let character = e.target.dataset.name;
