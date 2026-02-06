@@ -1,7 +1,7 @@
 export function Cards({ characters, onClick }) {
 	console.log(characters);
 	return (
-		<>
+		<div className='cards'>
 			{characters != undefined &&
 				characters.map((character) => (
 					<Card
@@ -11,7 +11,7 @@ export function Cards({ characters, onClick }) {
 						onClick={onClick}
 					/>
 				))}
-		</>
+		</div>
 	);
 }
 

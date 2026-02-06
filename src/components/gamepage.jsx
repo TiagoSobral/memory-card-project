@@ -51,10 +51,10 @@ export default function Page() {
 	return (
 		<>
 			<header>
-				<h1>Memory Card Game</h1>
+				<h1 className='gameTitle'>Memory Card Game</h1>
 			</header>
 			<main>
-				<h1>
+				<h1 className='instructions'>
 					Get points by clicking on an image but don't click on any more than once!
 				</h1>
 				<ScoreBoard score={score} bestScore={bestScore} />
