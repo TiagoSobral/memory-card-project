@@ -3,6 +3,8 @@
 This project is part of [The Odin Project](https://www.theodinproject.com/) curriculum.  
 The goal is to build a **Memory Card Game** using **React** that fetches card data from an API and allows users to play a matching game.
 
+**Project:** https://memory-card-project-tiago-sobral.netlify.app
+
 ## 💡 Project Overview
 
 Build a memory card game where:
