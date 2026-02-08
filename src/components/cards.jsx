@@ -8,6 +8,7 @@ export function Cards({ characters, onClick }) {
 						name={character.name}
 						key={character.id}
 						image={character.img}
+						hit={character.hit}
 						onClick={onClick}
 					/>
 				))}
