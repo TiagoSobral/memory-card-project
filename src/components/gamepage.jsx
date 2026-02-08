@@ -62,7 +62,7 @@ export default function Page() {
 				<h1 className='gameTitle'>Memory Card Game</h1>
 			</header>
 			<main>
-				<h1 className='instructions'>
+				<h1 className='instructions' aria-label='game instructions'>
 					Get points by clicking on an image but don't click on any more than once!
 				</h1>
 				<ScoreBoard score={score} bestScore={bestScore} />
@@ -73,7 +73,14 @@ export default function Page() {
 				/>
 			</main>
 			<footer>
-				<h1>Tiago Sobral</h1>
+				<h1 aria-label='author information'>
+					Tiago Sobral{' '}
+					<a
+						href='http://https://github.com/TiagoSobral/memory-card-project'
+						className='gitHub'
+						aria-label='game git-hub link'
+					></a>
+				</h1>
 			</footer>
 		</>
 	);

@@ -1,7 +1,7 @@
 export function Cards({ characters, onClick }) {
 	console.log(characters);
 	return (
-		<div className='cards'>
+		<div className='cards' aria-label='game cards'>
 			{characters != undefined &&
 				characters.map((character) => (
 					<Card
@@ -24,6 +24,7 @@ function Card({ name, charId, image, hit, onClick }) {
 			data-name={name}
 			data-hit={hit}
 			onClick={onClick}
+			aria-label='game card'
 		>
 			<img src={image} alt='' />
 			<h1>{name}</h1>
