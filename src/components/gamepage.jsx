@@ -22,28 +22,36 @@ export default function Page() {
 				// shuffle function is called to use the Fisher-Yates Algorithm, and randomize the characters.
 				return setCharacters(shuffle(figures));
 			});
-	}, [score]);
+	}, []);
 
 	function handleClick(e) {
-		let character = e.target.dataset.name;
-		let hit = e.target.dataset.hit;
+		let characterName = e.currentTarget.dataset.name;
+		let hit = e.currentTarget.dataset.hit;
 
-		if (hit) {
+		if (hit == 'true') {
 			if (bestScore < score) {
 				setBestScore(score);
 			}
 			setScore(0);
 			setCharacters(
-				character.map((element) => {
-					if (element === character) return { ...element, hit: false };
-				}),
+				shuffle(
+					characters.map((element) => {
+						return element.name === characterName
+							? { ...element, hit: false }
+							: { ...element };
+					}),
+				),
 			);
 		} else {
 			setScore(score + 1);
 			setCharacters(
-				character.map((element) => {
-					if (element === character) return { ...element, hit: true };
-				}),
+				shuffle(
+					characters.map((element) => {
+						return element.name === characterName
+							? { ...element, hit: true }
+							: { ...element };
+					}),
+				),
 			);
 		}
 	}
